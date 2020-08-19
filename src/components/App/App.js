@@ -5,6 +5,7 @@ import Footer from "../Layout/Footer";
 import Content from "../Layout/Content";
 import Contact from "../Contact/Contact";
 import Header from "../Header/Header";
+import Service from "../Service/Service";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navigation/>
             <Content>
                 <Header/>
+                <Service/>
                 <Contact/>
             </Content>
             <Footer/>
