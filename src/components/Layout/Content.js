@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Content() {
+function Content(props) {
 
     return (
         <div className="content">
-
+            {props.children}
         </div>
     );
 }

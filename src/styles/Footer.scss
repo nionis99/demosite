@@ -1,6 +1,5 @@
 .footer {
   display: block;
-  font-family: 'Open Sans', sans-serif;
   background: #1e2123;
   color: white;
   height: 8rem;
@@ -11,20 +10,19 @@
     color: #6b6c6c;
     max-width: 50%;
     font-size: 1rem;
-    margin: 2rem 3rem 0 3rem;
+    margin: 2rem 3rem 0 5rem;
   }
 
   .footer-right {
     float: right;
     max-width: 50%;
-    margin: 1.5rem 3rem 0 3rem;
+    margin: 1.5rem 3rem 0 0;
 
     .footer-shortcuts {
       ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
-        font-family: 'Open Sans', sans-serif;
 
         li {
           display: inline-block;
