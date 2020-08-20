@@ -48,6 +48,10 @@
     padding-top: .5rem;
     font-size: .8rem;
 
+    .menu-icon, .menu-btn {
+      display: none;
+    }
+
     .nav-title {
       float: left;
       font-size: 1.6rem;
@@ -162,27 +166,129 @@
 @media (max-width: 850px) {
   .nav {
     padding: 0;
-    height: 6rem;
+    height: 3.5rem;
 
     .nav-shortcuts {
       display: none;
     }
 
     .nav-menu {
-      height: inherit;
-      text-align: center;
+      height: 3.5rem;
+      position: relative;
+      width: 100%;
+      z-index: 3;
+      padding: 0;
 
       .nav-title {
-        float: none;
+        float: left;
         display: inline-block;
-        text-align: center;
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+      }
+
+      .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 27px 20px;
+        position: relative;
+        user-select: none;
+        margin-right: 2rem;
+      }
+
+      .menu-icon .navicon {
+        background: #fff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
+
+      .menu-icon .navicon:before,
+      .menu-icon .navicon:after {
+        background: #fff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
         width: 100%;
+      }
+
+      .menu-icon .navicon:before {
+        top: 5px;
+      }
+
+      .menu-icon .navicon:after {
+        top: -5px;
+      }
+
+      .menu-btn {
+        display: none;
+      }
+
+      .menu-btn:checked ~ .menu > .mobile-menu {
+        max-height: 340px;
+      }
+
+      .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+
+      .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+
+      .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+
+      .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
       }
 
       .menu {
         float: none;
         display: inline-block;
         text-align: center;
+        width: 100%;
+        background: #448ccb;
+        padding: 0;
+
+        .mobile-menu {
+          clear: both;
+          max-height: 0;
+          transition: max-height .2s ease-out;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          overflow: hidden;
+
+          li {
+            display: block;
+            padding: 20px 20px;
+            text-decoration: none;
+
+            &:hover {
+              color: #1e2123;
+              background: #e8e8e9;
+
+              ul {
+                display: none;
+                visibility: hidden;
+              }
+            }
+
+            a {
+              color: #1e2123;
+            }
+          }
+        }
       }
     }
   }

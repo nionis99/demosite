@@ -19,11 +19,13 @@ function Navigation() {
                     <span className="nav-bold-title">demo</span>
                     <span className="nav-light-title">site</span>
                 </div>
+                <input className="menu-btn" type="checkbox" id="menu-btn"/>
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
                 <div className="menu">
-                    <ul>
+                    <ul className="mobile-menu">
                         <li><NavLink exact to={"/"} activeClassName='active'>home</NavLink></li>
                         <li><NavLink exact to={"/service"}>service</NavLink></li>
-                        <li>works
+                        <li><NavLink exact to={"/works"}>works</NavLink>
                             <ul>
                                 <li><Link to={"/works"}>All</Link></li>
                                 <li><Link to={"/graphic"}>Graphic</Link></li>
