@@ -1,6 +1,85 @@
 .service {
-  padding: 2rem 5rem 2rem 5rem;
-  height: 25rem;
+  padding: 5rem;
+  height: 30rem;
   background: #448ccb;
   color: #ffffff;
+
+  .service-1st {
+    width: 30%;
+    float: left;
+    font-size: 1rem;
+
+    .service-1st-title {
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+
+  .service-2nd {
+    width: 65%;
+    float: right;
+
+    .service-2st-title {
+      margin: 0 2rem 0 2rem;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .service-2st-description {
+      p {
+        margin: 1rem 2rem;
+      }
+    }
+
+    .service-2nd-data {
+      margin-top: 3rem;
+      width: 100%;
+      background: #ffffff;
+      color: #1e2123;
+      height: 20rem;
+
+      .service-2nd-data-left {
+        float: left;
+        width: 40%;
+        margin: 2rem;
+
+        .service-2nd-data-left-title {
+          font-weight: 800;
+        }
+
+        .service-2nd-data-left-description {
+          padding-bottom: .5rem;
+        }
+
+        .service-2nd-data-left-list {
+          font-style: italic;
+
+          li {
+            list-style-type: none;
+
+            &:not(:first-child) {
+              border-top: 1px solid;
+            }
+
+            &:hover {
+              text-shadow: .5px 0 0;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .service-2nd-data-right {
+        float: right;
+        width: 40%;
+        margin: 2rem;
+
+        .service-2nd-data-right-title {
+          font-weight: 800;
+        }
+      }
+    }
+  }
 }

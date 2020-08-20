@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 5rem;
   height: 31.5rem;
 
   .header-welcome {
@@ -59,6 +59,7 @@
     height: inherit;
     float: right;
     width: 60%;
+    margin-right: 2rem;
 
     .logo {
       background: url("../images/header.png") no-repeat 0 0;
