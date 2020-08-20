@@ -22,14 +22,14 @@ function Navigation() {
                 <div className="menu">
                     <ul>
                         <li><NavLink exact to={"/"} activeClassName='active'>home</NavLink></li>
-                        <li><Link to={"/"}>service</Link></li>
-                        <li><Link to={"/"}>works</Link>
+                        <li><NavLink exact to={"/service"}>service</NavLink></li>
+                        <li>works
                             <ul>
-                                <li><Link to={"/"}>All</Link></li>
-                                <li><Link to={"/"}>Graphic</Link></li>
-                                <li><Link to={"/"}>Design</Link></li>
-                                <li><Link to={"/"}>Logo</Link></li>
-                                <li><Link to={"/"}>Website</Link></li>
+                                <li><Link to={"/works"}>All</Link></li>
+                                <li><Link to={"/graphic"}>Graphic</Link></li>
+                                <li><Link to={"/design"}>Design</Link></li>
+                                <li><Link to={"/logo"}>Logo</Link></li>
+                                <li><Link to={"/website"}>Website</Link></li>
                             </ul>
                         </li>
                         <li><NavLink exact to={"/about"} activeClassName='active'>about me</NavLink></li>

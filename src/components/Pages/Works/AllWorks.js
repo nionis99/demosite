@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../../Layout/Layout";
 
-function Website() {
+function AllWorks() {
     return <Layout>
-        Website
+        All works
     </Layout>;
 }
 
-export default Website;
+export default AllWorks;

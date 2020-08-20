@@ -14,10 +14,10 @@ function Footer() {
                 <div className="footer-shortcuts">
                     <ul>
                         <li><Link to={"/"}>home</Link></li>
-                        <li><Link to={"/"}>service</Link></li>
-                        <li><Link to={"/"}>works</Link></li>
+                        <li><Link to={"/service"}>service</Link></li>
+                        <li><Link to={"/works"}>works</Link></li>
                         <li><Link to={"/about"}>about me</Link></li>
-                        <li><Link to={"/"}>contact</Link></li>
+                        <li><Link to={"/contact"}>contact</Link></li>
                     </ul>
                 </div>
                 <div className="footer-copyright">

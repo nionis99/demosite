@@ -5,7 +5,7 @@ const getPosts = () => {
     return fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json());
 };
 
-function Service() {
+function Features() {
     const [posts, setPosts] = useState();
     const [isLoading, setIsLoading] = useState(false);
 
@@ -66,4 +66,4 @@ function Service() {
     );
 }
 
-export default Service;
+export default Features;

@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../Layout/Layout";
+import ContactForm from "./Home/ContactForm";
 
-function About() {
+function Service() {
     return <Layout>
-        About me
+       Service
     </Layout>;
 }
 
-export default About;
+export default Service;
