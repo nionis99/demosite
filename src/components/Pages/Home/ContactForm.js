@@ -1,11 +1,8 @@
 import React from 'react';
 
-function Contact(props) {
-
-    const { contactRef } = props;
-
+function ContactForm() {
     return (
-        <div className="contact" ref={contactRef}>
+        <div className="contact">
             <div className="contact-header">
                 Contact
             </div>
@@ -33,4 +30,4 @@ function Contact(props) {
     );
 }
 
-export default Contact;
+export default ContactForm;

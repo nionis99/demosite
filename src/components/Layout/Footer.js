@@ -1,9 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-function Footer(props) {
-
-    const {scrollTo, serviceRef, contactRef} = props;
-
+function Footer() {
     return (
         <div className="footer">
             <div className="footer-left">
@@ -15,11 +13,11 @@ function Footer(props) {
             <div className="footer-right">
                 <div className="footer-shortcuts">
                     <ul>
-                        <li><a href={""}>home</a></li>
-                        <li onClick={() => scrollTo(serviceRef)}>service</li>
-                        <li><a href={""}>works</a></li>
-                        <li><a href={""}>about me</a></li>
-                        <li onClick={() => scrollTo(contactRef)}>contact</li>
+                        <li><Link to={"/"}>home</Link></li>
+                        <li><Link to={"/"}>service</Link></li>
+                        <li><Link to={"/"}>works</Link></li>
+                        <li><Link to={"/about"}>about me</Link></li>
+                        <li><Link to={"/"}>contact</Link></li>
                     </ul>
                 </div>
                 <div className="footer-copyright">

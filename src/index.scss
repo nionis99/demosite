@@ -5,6 +5,13 @@ body {
   line-height: 1.6rem;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #root {
   height: inherit;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+

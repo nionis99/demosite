@@ -1,13 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../../Spinner/Spinner";
 
 const getPosts = () => {
     return fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json());
 };
 
-
-function Service(props) {
-    const {serviceRef} = props;
+function Service() {
     const [posts, setPosts] = useState();
     const [isLoading, setIsLoading] = useState(false);
 
@@ -28,11 +26,8 @@ function Service(props) {
         fetchData();
     }, []);
 
-    console.log(posts);
-    console.log(isLoading);
-
     return (
-        <div className="service" ref={serviceRef}>
+        <div className="service">
             <div className="service-1st">
                 <div className="service-1st-title">
                     web development

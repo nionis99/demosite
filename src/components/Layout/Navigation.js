@@ -1,18 +1,17 @@
 import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
 
-function Navigation(props) {
 
-    const {scrollTo, serviceRef, contactRef} = props;
-
+function Navigation() {
     return (
         <div className="nav">
             <div className="nav-shortcuts">
                 <ul>
-                    <li><a href={""}>meniu</a></li>
-                    <li><a href={""}>some text</a></li>
-                    <li><a href={""}>another item</a></li>
-                    <li><a href={""}>one more</a></li>
-                    <li><a href={""}>and last one</a></li>
+                    <li><Link to={"/"}>meniu</Link></li>
+                    <li><Link to={"/"}>some text</Link></li>
+                    <li><Link to={"/"}>another item</Link></li>
+                    <li><Link to={"/"}>one more</Link></li>
+                    <li><Link to={"/"}>and last one</Link></li>
                 </ul>
             </div>
             <div className="nav-menu">
@@ -22,19 +21,19 @@ function Navigation(props) {
                 </div>
                 <div className="menu">
                     <ul>
-                        <li><a href={""}>home</a></li>
-                        <li onClick={() => scrollTo(serviceRef)}>service</li>
-                        <li><a href={"#"}>works</a>
+                        <li><NavLink exact to={"/"} activeClassName='active'>home</NavLink></li>
+                        <li><Link to={"/"}>service</Link></li>
+                        <li><Link to={"/"}>works</Link>
                             <ul>
-                                <li><a href="">All</a></li>
-                                <li><a href="">Graphic</a></li>
-                                <li><a href="">Design</a></li>
-                                <li><a href="">Logo</a></li>
-                                <li><a href="">Website</a></li>
+                                <li><Link to={"/"}>All</Link></li>
+                                <li><Link to={"/"}>Graphic</Link></li>
+                                <li><Link to={"/"}>Design</Link></li>
+                                <li><Link to={"/"}>Logo</Link></li>
+                                <li><Link to={"/"}>Website</Link></li>
                             </ul>
                         </li>
-                        <li><a href={""}>about me</a></li>
-                        <li onClick={() => scrollTo(contactRef)}>contact</li>
+                        <li><NavLink exact to={"/about"} activeClassName='active'>about me</NavLink></li>
+                        <li><NavLink exact to={"/contact"}>contact</NavLink></li>
                     </ul>
                 </div>
             </div>
