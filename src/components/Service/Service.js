@@ -6,7 +6,8 @@ const getPosts = () => {
 };
 
 
-function Service() {
+function Service(props) {
+    const {serviceRef} = props;
     const [posts, setPosts] = useState();
     const [isLoading, setIsLoading] = useState(false);
 
@@ -31,7 +32,7 @@ function Service() {
     console.log(isLoading);
 
     return (
-        <div className="service">
+        <div className="service" ref={serviceRef}>
             <div className="service-1st">
                 <div className="service-1st-title">
                     web development

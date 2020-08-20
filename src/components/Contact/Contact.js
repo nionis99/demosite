@@ -1,8 +1,11 @@
 import React from 'react';
 
-function Contact() {
+function Contact(props) {
+
+    const { contactRef } = props;
+
     return (
-        <div className="contact">
+        <div className="contact" ref={contactRef}>
             <div className="contact-header">
                 Contact
             </div>
@@ -23,7 +26,7 @@ function Contact() {
                     <input type="email" id="email" name="email"/>
                     <label htmlFor="subject">Message</label>
                     <textarea id="message" name="message" wrap={"off"} rows={4}/>
-                    <input type="submit" value="Send"/>
+                    <input type="submit" onClick={() => alert("Not available")} value="Send"/>
                 </div>
             </div>
         </div>

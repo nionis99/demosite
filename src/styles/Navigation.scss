@@ -51,6 +51,7 @@
     .nav-title {
       float: left;
       font-size: 1.6rem;
+      padding-top: .5rem;
 
       .nav-bold-title {
         font-weight: 800;
@@ -75,7 +76,7 @@
         li {
           display: inline-block;
           text-transform: uppercase;
-          float: right;
+          padding: 0 .7rem .7rem .7rem;
 
           ul:before {
             content: '';
@@ -97,9 +98,10 @@
             display: none;
             visibility: hidden;
             padding: 0.3125rem .2rem .2rem .2rem;
-            margin-left: -40px;
+            margin-left: -55px;
             width: 10rem;
             font-size: .8rem;
+            margin-top: .7rem;
 
             li {
               font-weight: 800;
@@ -107,6 +109,7 @@
               width: 100%;
               position: relative;
               vertical-align: middle;
+              padding: 0;
 
               a {
                 color: #ffffff !important;
@@ -125,15 +128,16 @@
 
           a {
             display: block;
-            padding: 0 .7rem .7rem .7rem;
+            //padding: 0 .7rem .7rem .7rem;
             text-decoration: none;
             color: white;
           }
         }
 
         li:hover {
-          a {
+          &, a {
             color: #20282E;
+            cursor: pointer;
           }
 
           ul {

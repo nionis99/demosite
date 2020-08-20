@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Navigation() {
+function Navigation(props) {
+
+    const {scrollTo, serviceRef, contactRef} = props;
 
     return (
         <div className="nav">
@@ -20,8 +22,8 @@ function Navigation() {
                 </div>
                 <div className="menu">
                     <ul>
-                        <li><a href={""}>contact</a></li>
-                        <li><a href={""}>about me</a></li>
+                        <li><a href={""}>home</a></li>
+                        <li onClick={() => scrollTo(serviceRef)}>service</li>
                         <li><a href={"#"}>works</a>
                             <ul>
                                 <li><a href="">All</a></li>
@@ -31,8 +33,8 @@ function Navigation() {
                                 <li><a href="">Website</a></li>
                             </ul>
                         </li>
-                        <li><a href={""}>service</a></li>
-                        <li><a href={""}>home</a></li>
+                        <li><a href={""}>about me</a></li>
+                        <li onClick={() => scrollTo(contactRef)}>contact</li>
                     </ul>
                 </div>
             </div>

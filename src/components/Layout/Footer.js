@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Footer() {
+function Footer(props) {
+
+    const {scrollTo, serviceRef, contactRef} = props;
 
     return (
         <div className="footer">
@@ -14,10 +16,10 @@ function Footer() {
                 <div className="footer-shortcuts">
                     <ul>
                         <li><a href={""}>home</a></li>
-                        <li><a href={""}>service</a></li>
+                        <li onClick={() => scrollTo(serviceRef)}>service</li>
                         <li><a href={""}>works</a></li>
                         <li><a href={""}>about me</a></li>
-                        <li><a href={""}>contact</a></li>
+                        <li onClick={() => scrollTo(contactRef)}>contact</li>
                     </ul>
                 </div>
                 <div className="footer-copyright">
