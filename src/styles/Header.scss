@@ -82,3 +82,50 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 4rem;
+
+    .header-logo {
+      margin: 0;
+    }
+
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    height: auto;
+    padding: 3rem;
+
+    .header-welcome {
+      width: 100%;
+      float: none;
+      height: 15rem;
+
+      .header-title {
+        padding: 2rem 0 1rem 2rem;
+      }
+
+      .header-divider {
+        margin-left: 2rem;
+      }
+
+      .header-text {
+        padding: 1rem 2rem;
+      }
+
+      .header-text-button {
+        bottom: 10%;
+      }
+    }
+
+    .header-logo {
+      margin-top: 3rem;
+      width: 100%;
+      float: none;
+      height: 32rem;
+    }
+  }
+}

@@ -25,7 +25,6 @@
     .contact-text {
       float: left;
       width: 40%;
-      padding: 0 1rem 0 1rem;
     }
 
     .contact-form {
@@ -71,6 +70,38 @@
       input[type=submit]:hover {
         background-color: #0c9aec;
         color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    height: auto;
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .contact {
+    height: auto;
+    padding: 3rem 3rem 5rem 3rem;
+
+    .contact-divider {
+      padding: 0;
+    }
+
+    .contact-content {
+      height: auto;
+
+      .contact-text, .contact-form {
+        float: none;
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+      .contact-form input[type=submit] {
+        float: right;
       }
     }
   }
