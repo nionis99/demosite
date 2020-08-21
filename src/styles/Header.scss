@@ -129,3 +129,44 @@
     }
   }
 }
+
+@media (max-width: 580px) {
+  .header {
+    height: auto;
+
+    .header-welcome {
+      height: auto;
+
+      .header-text {
+        padding: 2rem;
+      }
+
+      .header-text-button {
+        position: relative;
+
+        .text-button {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .header-logo {
+      height: auto;
+      position: relative;
+
+      .logo {
+        height: 20rem;
+      }
+
+      .header-logo-text {
+        .title {
+          padding: 1rem 2rem;
+        }
+
+        .description {
+          padding: 0 2rem 2rem 2rem;
+        }
+      }
+    }
+  }
+}
