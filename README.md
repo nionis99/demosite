@@ -2,13 +2,13 @@
 
 Full responsive HTML - CSS template from psd on React.
 
-##run
+## run
 ``npm start``
 
-##build
+## build
 ``npm build``
 
-##file structure
+## file structure
 ```
 --src/
   --components/
