@@ -11,6 +11,13 @@ function ContactForm() {
         e.preventDefault();
         axios.post("http://test.test/send", {name, email, message})
             .then(response => console.log(response)).catch(e => alert(e.message));
+        resetForm();
+    }
+
+    const resetForm = () => {
+        setName("");
+        setEmail("");
+        setMessage("");
     }
 
     return (
