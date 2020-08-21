@@ -5,3 +5,9 @@
   height: auto;
   position: relative;
 }
+
+@media (max-width: 850px) {
+  .content {
+    padding-top: 3.5rem;
+  }
+}

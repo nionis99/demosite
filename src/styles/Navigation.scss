@@ -167,6 +167,10 @@
   .nav {
     padding: 0;
     height: 3.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #ffffff;
 
     .nav-shortcuts {
       display: none;
