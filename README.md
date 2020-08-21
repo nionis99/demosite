@@ -17,6 +17,10 @@ Full responsive HTML - CSS template from psd on React.
         --Pages/
         --...
   --styles/
+        --App/
+        --Layout/
+        --Pages/
+        --...
   --images/
     index.js
     Routes.js
