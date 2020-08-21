@@ -3,7 +3,12 @@ import Layout from "../../Layout/Layout";
 
 function AllWorks() {
     return <Layout>
-        All works
+        <div className="works">
+            <div className="works-header">
+                All Works
+            </div>
+            <div className="works-divider"/>
+        </div>
     </Layout>;
 }
 

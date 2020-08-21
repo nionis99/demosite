@@ -3,7 +3,12 @@ import Layout from "../../Layout/Layout";
 
 function Graphic() {
     return <Layout>
-        Graphic
+        <div className="works">
+            <div className="works-header">
+                Graphic
+            </div>
+            <div className="works-divider"/>
+        </div>
     </Layout>;
 }
 

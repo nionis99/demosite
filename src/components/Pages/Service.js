@@ -3,7 +3,12 @@ import Layout from "../Layout/Layout";
 
 function Service() {
     return <Layout>
-        Service
+        <div className="service">
+            <div className="service-header">
+                service
+            </div>
+            <div className="service-divider"/>
+        </div>
     </Layout>;
 }
 

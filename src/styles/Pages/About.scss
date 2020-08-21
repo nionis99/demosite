@@ -1,0 +1,33 @@
+.about {
+  height: 38rem;
+  padding: 5rem;
+
+  .about-header {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #1e2123;
+    padding-bottom: 1rem;
+  }
+
+  .about-divider {
+    padding-top: 1rem;
+    border-top: .8rem solid #1e2123;
+    width: 3.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    height: auto;
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .about {
+    height: auto;
+    padding: 3rem 3rem 5rem 3rem;
+  }
+}

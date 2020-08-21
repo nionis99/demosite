@@ -3,7 +3,12 @@ import Layout from "../Layout/Layout";
 
 function About() {
     return <Layout>
-        About me
+        <div className="about">
+            <div className="about-header">
+                About me
+            </div>
+            <div className="about-divider"/>
+        </div>
     </Layout>;
 }
 

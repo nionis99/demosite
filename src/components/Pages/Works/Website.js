@@ -3,7 +3,12 @@ import Layout from "../../Layout/Layout";
 
 function Website() {
     return <Layout>
-        Website
+        <div className="works">
+            <div className="works-header">
+                Website
+            </div>
+            <div className="works-divider"/>
+        </div>
     </Layout>;
 }
 

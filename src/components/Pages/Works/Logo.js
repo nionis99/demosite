@@ -3,7 +3,12 @@ import Layout from "../../Layout/Layout";
 
 function Logo() {
     return <Layout>
-        Logo
+        <div className="works">
+            <div className="works-header">
+                Logo
+            </div>
+            <div className="works-divider"/>
+        </div>
     </Layout>;
 }
 

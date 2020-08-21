@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Spinner from "../../Spinner/Spinner";
+import Spinner from "../../Utils/Spinner";
 
 const getPosts = () => {
     return fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json());
@@ -27,12 +27,12 @@ function Features() {
     }, []);
 
     return (
-        <div className="service">
-            <div className="service-1st">
-                <div className="service-1st-title">
+        <div className="feature">
+            <div className="feature-1st">
+                <div className="feature-1st-title">
                     web development
                 </div>
-                <div className="service-1st-description">
+                <div className="feature-1st-description">
                     <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuad Phasellus interdum aliquam eros,
                         vitae vestibulum elit malesuad Phasellus interdum aliquam eros, vitae vestibulum elit
                         malesuad</p>
@@ -41,21 +41,21 @@ function Features() {
                         malesuad</p>
                 </div>
             </div>
-            <div className="service-2nd">
-                <div className="service-2st-title">Wireframe</div>
-                <div className="service-2st-description">
+            <div className="feature-2nd">
+                <div className="feature-2st-title">Wireframe</div>
+                <div className="feature-2st-description">
                     <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuad ut</p>
                 </div>
-                <div className="service-2nd-data">
-                    <div className="service-2nd-data-left">
-                        <div className="service-2nd-data-left-title">Custom List</div>
-                        <div className="service-2nd-data-left-description"><p>Some heading</p></div>
+                <div className="feature-2nd-data">
+                    <div className="feature-2nd-data-left">
+                        <div className="feature-2nd-data-left-title">Custom List</div>
+                        <div className="feature-2nd-data-left-description"><p>Some heading</p></div>
                         <div
-                            className="service-2nd-data-left-list">{renderPosts(isLoading, posts)}</div>
+                            className="feature-2nd-data-left-list">{renderPosts(isLoading, posts)}</div>
                     </div>
-                    <div className="service-2nd-data-right">
-                        <div className="service-2nd-data-right-title">Web Development</div>
-                        <div className="service-2nd-data-right-description">
+                    <div className="feature-2nd-data-right">
+                        <div className="feature-2nd-data-right-title">Web Development</div>
+                        <div className="feature-2nd-data-right-description">
                             <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuad ut. Integer nec ex
                                 accumsan, suspicit eros a, tempus nisi.</p>
                         </div>
