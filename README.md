@@ -40,4 +40,5 @@ Full responsive HTML - CSS template from psd on React.
   }
 ```
 
-![PSD Template](https://lh3.google.com/u/0/d/1FK5IB0TjAClZlOsehtFEeOMZj7Eofaih=w1600-h757-iv1)
+## PSD image
+![image](https://drive.google.com/uc?export=view&id=1FK5IB0TjAClZlOsehtFEeOMZj7Eofaih)
